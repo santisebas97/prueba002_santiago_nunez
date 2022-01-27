@@ -42,10 +42,12 @@ public class MainActivityFragment_SSNT extends Fragment {
     private TextView answerTextView;
     private QuizViewModel quizViewModel;
 
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.quizViewModel = ViewModelProviders.of(getActivity()).get(QuizViewModel.class);
+
     }
 
     @Override

@@ -23,6 +23,7 @@ public class MainActivity_SSNT extends AppCompatActivity {
     private MainActivityFragment_SSNT quizFragment;
     private QuizViewModel quizViewModel;
     private OnSharedPreferenceChangeListener preferencesChangeListener;
+    private int codigoReq=1;
 
     private void setSharedPreferences() {
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);

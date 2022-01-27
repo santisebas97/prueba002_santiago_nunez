@@ -25,10 +25,10 @@ public class LoginActivity_SSNT extends AppCompatActivity {
         buttonIngresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Bundle dato = getIntent().getExtras();
+                //Bundle dato = getIntent().getExtras();
                 String usuario = editTextUsuario.getText().toString();
                 String contrasena = editTextContrasena.getText().toString();
-                String usuario1 = dato.getString("key_usuario1");
+                //String usuario1 = dato.getString("key_usuario1");
 
 
 

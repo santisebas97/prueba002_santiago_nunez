@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class LoginActivity_SSNT extends AppCompatActivity {
 
@@ -27,11 +28,11 @@ public class LoginActivity_SSNT extends AppCompatActivity {
                 String usuario = editTextUsuario.getText().toString();
                 String contrasena = editTextContrasena.getText().toString();
 
-                if(usuario.equals("santiago") && contrasena.equals("1234") || usuario.equals("kathy") && contrasena.equals()){
+                if(usuario.equals("santiago") && contrasena.equals("1234") || usuario.equals("kathy") && contrasena.equals("12345")){
                     Intent intent - new Intent(this, MainActivity_SSNT.class);
                     startActivity(intent);
                 }else{
-
+                    Toast.makeText(this, "Usuario o contrasena incorrecto", Toast.LENGTH_LONG).show();
                 }
 
             }

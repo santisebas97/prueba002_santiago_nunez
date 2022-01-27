@@ -70,6 +70,7 @@ public class MainActivityFragment_SSNT extends Fragment {
 
 
 
+
         for (int i = 0; i < answersTableLayout.getChildCount(); i++) {
             try {
                 if (answersTableLayout.getChildAt(i) instanceof TableRow) {

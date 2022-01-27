@@ -25,7 +25,7 @@ public class MainActivity_SSNT extends AppCompatActivity {
     private QuizViewModel quizViewModel;
     private OnSharedPreferenceChangeListener preferencesChangeListener;
     private int codigoReq=1;
-    private TextView textViewUsuario1;
+    private TextView textViewUsuario2;
 
     private void setSharedPreferences() {
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
@@ -55,7 +55,12 @@ public class MainActivity_SSNT extends AppCompatActivity {
         setSupportActionBar(toolbar);
         this.setSharedPreferences();
         this.screenSetUp();
-        textViewUsuario1 =findViewById(R.id.textViewUsuario1);
+        /*
+        textViewUsuario2 =findViewById(R.id.textViewUsuario2);
+        Bundle dato = getIntent().getExtras();
+        String usuario=dato.getString("key_usuario1");
+
+         */
     }
 
     @Override

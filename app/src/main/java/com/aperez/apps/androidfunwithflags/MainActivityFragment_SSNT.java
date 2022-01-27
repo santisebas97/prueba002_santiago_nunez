@@ -1,4 +1,4 @@
-package com.omilec.apps.androidfunwithflags;
+package com.aperez.apps.androidfunwithflags;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -28,10 +28,10 @@ import android.widget.TextView;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 
-import com.omilec.apps.eventhandlers.GuessButtonListener;
-import com.omilec.apps.lifecyclehelpers.QuizViewModel;
+import com.aperez.apps.eventhandlers.GuessButtonListener_SSNT;
+import com.aperez.apps.lifecyclehelpers.QuizViewModel;
 
-public class MainActivityFragment extends Fragment {
+public class MainActivityFragment_SSNT extends Fragment {
 
     private SecureRandom random;
     private Animation shakeAnimation;
@@ -53,7 +53,7 @@ public class MainActivityFragment extends Fragment {
                              Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
         View view = inflater.inflate(R.layout.fragment_main, container, false);
-        OnClickListener guessButtonListener = new GuessButtonListener(this);
+        OnClickListener guessButtonListener = new GuessButtonListener_SSNT(this);
         TableLayout answersTableLayout = view.findViewById(R.id.answersTableLayout);
 
         this.random = new SecureRandom();

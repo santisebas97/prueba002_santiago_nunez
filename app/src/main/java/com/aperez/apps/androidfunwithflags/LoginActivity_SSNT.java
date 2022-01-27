@@ -29,7 +29,7 @@ public class LoginActivity_SSNT extends AppCompatActivity {
                 String contrasena = editTextContrasena.getText().toString();
 
                 if(usuario.equals("santiago") && contrasena.equals("1234") || usuario.equals("kathy") && contrasena.equals("12345")){
-                    Intent intent - new Intent(this, MainActivity_SSNT.class);
+                    Intent intent = new Intent(this, MainActivity_SSNT.class);
                     startActivity(intent);
                 }else{
                     Toast.makeText(this, "Usuario o contrasena incorrecto", Toast.LENGTH_LONG).show();

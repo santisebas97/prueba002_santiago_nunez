@@ -22,4 +22,6 @@
     <string name="textview_usuario">Usuario</string>
     <string name="textview_contrasena">Contrasena</string>
     <string name="button_ingresar">Ingresar</string>
+    <string name="textview_usuario1">usuario: santiago - cont: 1234</string>
+    <string name="textview_usuario2">usuario: kathy - cont: 12345</string>
 </resources>
